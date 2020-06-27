@@ -2,23 +2,33 @@
 using namespace std;
 
 
-void bubble_sort(int a[],int n){
-	int i,j;
-
-	for(i=1;i<=n-1;i++){
-		for(j=0;j<n-i;j++){
-			if(a[j]>a[j+1]){
-				swap(a[j],a[j+1]);
-			}
+void insertion_sort(int a[],int n){
+	int i,j,current;
+	for(i=1;i<n;i++){
+		j=i-1;
+		current=a[i];
+		while(j>=0 && a[j]>current){
+            a[j+1]=a[j];
+            j--;
 		}
-	
+		a[j+1]=current;
 	}
-    
-   
+
+
 	for(i=0;i<n;i++){
 		cout<<a[i]<<"  ";
 	}
 }
+
+
+
+
+
+
+
+
+
+
 
 int main(){
 	int n;
@@ -33,6 +43,6 @@ int main(){
 		cin>>a[i];
 	}
     
-	bubble_sort(a,n);
+	insertion_sort(a,n);
 	return 0;
 }
