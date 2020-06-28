@@ -7,12 +7,6 @@ bool compare(int a,int b){
 	return a>b;
 }
 
-
-
-
-
-
-
 int main(){
 	int n;
 	int a[1000];
