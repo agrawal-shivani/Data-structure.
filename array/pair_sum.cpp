@@ -25,7 +25,7 @@ void pair_sum(int a[],int n,int key){
 
      if(count==0){
           cout<<"Key can't found";
-     }
+     }./
     
 }
 
