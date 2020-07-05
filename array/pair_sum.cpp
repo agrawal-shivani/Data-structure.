@@ -7,6 +7,7 @@ void pair_sum(int a[],int n,int key){
      j=n-1;
      int count=0;
      
+     
      for(i=0;i<=j;i++){
           if(a[i]+a[j]==key){
                cout<<a[i]<<" , "<<a[j]<<endl;
