@@ -9,7 +9,8 @@ int main(){
 	cin>>m;
 	cout<<"Enter size of column"<<endl;
 	cin>>n;
-	cout<<"abc";
+	
+
      
 
     cout<<"Enter element in array"<<endl; 
@@ -47,6 +48,6 @@ int main(){
 			}
 		}
 	}
-    cout<<"abc";
+    
 	return 0;
 }
