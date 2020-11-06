@@ -1,0 +1,40 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main() {
+   int arr[]={10,20,30,40,50};
+   int n=sizeof(arr)/sizeof(int);
+   rotate(arr,arr+2,arr+n);
+
+   for (int i = 0; i < n; ++i)
+   {
+   	  cout<<arr[i]<<" ";
+   }
+   cout<<endl;
+
+   //vector
+   vector<int> v{10,20,30,40,50};
+   rotate(v.begin(),v.begin()+3,v.end());
+
+    for (int i = 0; i < v.size(); ++i)
+   {
+   	  cout<<v[i]<<" ";
+   }
+   cout<<endl;
+
+   //next permutation
+   vector<int> v1{10,20,30,40,50};
+   next_permutation(v1.begin(),v1.end());
+   next_permutation(v1.begin(),v1.end());
+   next_permutation(v1.begin(),v1.end());
+   
+
+   //for each loop
+   for(int x:v1){
+   	  cout<<x<<" ";
+   }
+   return 0;
+
+}
