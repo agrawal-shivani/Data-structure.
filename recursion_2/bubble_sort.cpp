@@ -17,6 +17,7 @@ void bubble_sort(int a[],int n){
 	bubble_sort(a,n-1);
 }
 
+//another method
 void bubble_sort_recursive(int *a,int j,int n){
 	if(n==1)
 		return;
