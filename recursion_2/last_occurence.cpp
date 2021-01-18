@@ -20,6 +20,7 @@ int lastOcc(int *a,int n,int key){
 } 
 
 
+
 int main(){
 	int arr[]={1,2,3,7,4,5,6,7,10};
 	int n=sizeof(arr)/sizeof(int);
